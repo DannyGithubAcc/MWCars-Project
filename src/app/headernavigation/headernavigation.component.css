@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    font-family: 'orbitron';
+    font-size: .8rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.08rem;
+}
+.h-ul--navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-ul--navlist li{
+    margin-left: 20px;
+}
+
+.header ul{
+    list-style-type: none;
+}
+
+.header-ul li{
+    
+}
+
+
+
+@media (max-width: 1200px){
+
+}
