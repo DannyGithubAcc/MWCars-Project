@@ -1,7 +1,7 @@
 
 /* Keep pagecontent centered */
 .o-page--wrapper{
-    width: 80vw;
+    width: 85vw;
     height: 100%;
     margin: 0 auto;
     /* background-color: aquamarine; */
@@ -116,6 +116,17 @@
     justify-content: flex-end;
     border-radius: 0 0 12px 12px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.infoimg{
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.infonieuwbouw{
+    position: absolute;
+    /* background-color: palevioletred; */
 }
 
 .imgsliderwrap{

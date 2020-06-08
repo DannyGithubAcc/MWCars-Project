@@ -17,13 +17,12 @@ const routes: Routes = [
   {path: 'nieuwbouw', component: NieuwbouwComponent},
   {path: 'over-ons', component: OverOnsComponent},
   {path: 'contact', component: ContactComponent},
-
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '**', component: NotfoundComponent}
+  {path: '**', component: NotfoundComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled'})],
   exports: [RouterModule]
 })
 export class ApproutesRoutingModule { }

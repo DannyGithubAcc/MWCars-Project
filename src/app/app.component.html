@@ -15,12 +15,12 @@
       <div class="bvaglogo"><img src="../assets/Bvag_logo.png" alt="" /></div>
 
       <div class="body__headerwrap">
-        <app-headernavigation (changeValue)="slideContOpen($event)"></app-headernavigation>
+        <app-headernavigation (changeValue)="slideContOpen()"></app-headernavigation>
       </div>
       
 
       <div class="h-img__logowrap">
-        <img src="../assets/Frame 24.svg" alt="" />
+        <a href="./home"><img src="../assets/Frame 24.svg" alt="" /></a>
       </div>
     </div>
   </div>
@@ -32,8 +32,8 @@
       hallo
 
     </div> -->
-    <div class="imgsliderwrap" style="position: relative;">
-      <div style="position: absolute; z-index: 1; left: 100px; top: 100px;">HALLOOOOOOOOO</div>
+    <div class="imgsliderwrap">
+      <div class="infonieuwbouw"><img class="infoimg" src="../assets/infobtn.svg" alt=""></div>
 
       <div class="imgsliderSlide ">
         <img src="../assets/nieuwbouwimg/2020-02-13_1 - Photo.jpg" class="myembed " alt="" />
@@ -138,7 +138,7 @@
   <hr style="margin-top: 32px; width: 60%;" /><br />
 
   
-  <footer>
+  <footer id="test">
     <app-footerarea></app-footerarea>
    </footer>
 

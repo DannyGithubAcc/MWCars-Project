@@ -12,7 +12,7 @@ import { Component, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'mwcarsproject';
   imgIndex = 1;
-  cb: (target: string, duration: number) => void;
+  cb: (target: string, target2: string, duration: number) => void;
   home$ = this.importService.myJsonData$.pipe(
     tap(result => console.log(result)),
     // catchError(err => {
@@ -30,24 +30,24 @@ export class AppComponent implements OnInit {
     // this.importService.getDataFromJson('001').subscribe(x => console.log(x));
   }
 
-
-
   public fOpeningAnim() {
     const anim = this.gsapService;
     const mainContainer = '.h-routlet__wrap';
     anim.fFadeFrom(mainContainer, 1, 0, 1);
   }
 
-  public slideContOpen(e: boolean) {
-    console.log(e); // Remove
+  public slideContOpen() {
+    // console.log(e); // Remove
     const mainCont = '.line';
-    this.gsapService.slideOpenFromTtoB(mainCont, 1, 650, 0.3, this.slideTxtIn);
+    this.gsapService.slideOpenFromTtoB(mainCont, .8, 650, 0.3, this.slideTxtIn);
   }
 
   public slideTxtIn() {
     console.log(this);
     const slideInHeader = '.line h2';
-    this.cb(slideInHeader, .4);
+    const slideInDesc = '.line .hometext';
+    // context cb method returned from gsapService
+    this.cb(slideInHeader, slideInDesc, .4);
     console.log('CB CALLED FROM COMPONENT');
   }
 

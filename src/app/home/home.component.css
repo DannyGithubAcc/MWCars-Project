@@ -1,3 +1,31 @@
+.homewrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
 .navHeader{
     opacity: 0;
+}
+
+.navHeader h2{
+    padding: 30px 0;
+}
+
+.hometext{
+    padding: 20px 0 0 0;
+    width: 65%;
+    height: auto;
+    font-family: 'scada';
+    font-size: 16px;
+    opacity: 0;
+}
+
+.kernwtext{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }

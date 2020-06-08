@@ -25,18 +25,21 @@ export class GsapServiceService {
   }
 
   public slideOpenFromTtoB(e: string, tym: number, growth: number, dlay: number, cb: () => void): void {
-    const openLine = gsap.fromTo(e, {height: 1},
+    const tl = gsap.timeline({});
+    tl.fromTo(e, {height: 1},
       {duration: tym, height: growth, delay: dlay,  ease: 'expo.out', onComplete: cb, callbackScope: this});
-    openLine.play();
+    // tl.play();
   }
 
   // public cb() {
   //   console.log('CALLBACK FROM SERVICE!!');
   // }
 
-  public cb(e: string, tym: number) {
+  public cb(e: string, e2: string, tym: number) {
+    const textAnim = gsap.timeline({});
     console.log('CB FROM GSAP 3 Service');
-    gsap.fromTo(e, {x: -100, autoAlpha: 0}, {x: 0, duration: tym, autoAlpha: 1});
+    textAnim.fromTo(e, {x: -100, opacity: 0}, {x: 0, duration: tym, opacity: 1, ease: Power2.easIn })
+    .fromTo(e2, {x: -100, opacity: 0 }, {x: 0, duration: tym, opacity: 1, delay: .2, ease: 'back' });
   }
 
   public imgSlideAnim(e: string, num: number) {
