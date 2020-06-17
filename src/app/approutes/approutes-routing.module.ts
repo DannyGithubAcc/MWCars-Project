@@ -1,4 +1,4 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { NotfoundComponent } from '../notfound/notfound.component';
 import { VoorraadComponent } from '../voorraad/voorraad.component';
 import { ContactComponent } from '../contact/contact.component';
@@ -8,7 +8,9 @@ import { ImportComponent } from '../import/import.component';
 import { HomeComponent } from '../home/home.component';
 import { NgModule } from '@angular/core';
 
-
+const routerOptions: ExtraOptions = {
+  anchorScrolling: 'enabled',
+};
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -17,12 +19,12 @@ const routes: Routes = [
   {path: 'nieuwbouw', component: NieuwbouwComponent},
   {path: 'over-ons', component: OverOnsComponent},
   {path: 'contact', component: ContactComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: '/', pathMatch: 'full'},
   {path: '**', component: NotfoundComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled'})],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class ApproutesRoutingModule { }

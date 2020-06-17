@@ -1,8 +1,7 @@
-import { of } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 import { ImportService } from './import.service';
 import { GsapServiceService } from './gsap-service.service';
-import { Component, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +11,9 @@ import { Component, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'mwcarsproject';
   imgIndex = 1;
-  cb: (target: string, target2: string, duration: number) => void;
+  cb: (target: string, target2: string, target3: string, duration: number) => void;
   home$ = this.importService.myJsonData$.pipe(
-    tap(result => console.log(result)),
-    // catchError(err => {
-    //   return of(null);
-    // })
+    tap(result => console.log(result))
   );
 
   constructor(private gsapService: GsapServiceService,
@@ -25,9 +21,6 @@ export class AppComponent implements OnInit {
               private importService: ImportService) {}
 
   ngOnInit() {
-    // this.fOpeningAnim();
-    // this.slideOpen();
-    // this.importService.getDataFromJson('001').subscribe(x => console.log(x));
   }
 
   public fOpeningAnim() {
@@ -37,17 +30,19 @@ export class AppComponent implements OnInit {
   }
 
   public slideContOpen() {
-    // console.log(e); // Remove
     const mainCont = '.line';
     this.gsapService.slideOpenFromTtoB(mainCont, .8, 650, 0.3, this.slideTxtIn);
+    console.log(this, 'HIEROOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
+    // this.slideTxtIn creates a context of app.component.ts reference from gsapService
   }
 
   public slideTxtIn() {
     console.log(this);
     const slideInHeader = '.line h2';
-    const slideInDesc = '.line .hometext';
+    const slideInDesc = '.line .descriptiontext';
+    const imgwalkin = '.line .imgrow';
     // context cb method returned from gsapService
-    this.cb(slideInHeader, slideInDesc, .4);
+    this.cb(slideInHeader, slideInDesc, imgwalkin, .4);
     console.log('CB CALLED FROM COMPONENT');
   }
 
@@ -55,6 +50,11 @@ export class AppComponent implements OnInit {
     const trackindex = this.imgIndex += num;
     console.log('CHECK HIER: ' + trackindex);
     this.getImages(trackindex);
+  }
+
+  public nieuwbouwInfo(e: string, opacity: number, position: number) {
+    const nwbouwInfoWindow = '.nieuwbouwinformationwindow';
+    this.gsapService.nieuwbouwInfoAnim(nwbouwInfoWindow, .7, 0);
   }
 
   public getImages(indexFImages: number) {

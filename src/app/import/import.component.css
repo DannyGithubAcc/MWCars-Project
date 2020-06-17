@@ -1,3 +1,67 @@
-.navHeader{
-    opacity: 0;
+.importwrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.navHeader {
+  opacity: 0;
+  padding-bottom: 10px;
+}
+
+.navHeader h2{
+    padding: 15px 0;
+}
+
+.descriptiontext {
+  padding: 20px 0 0 0;
+  padding-right: 15px;
+  width: 80%;
+  height: 550px;
+  font-family: "scada";
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0;
+  overflow-y: auto;
+}
+
+.descrtxtcol{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.descrtxtcol div{
+    width: 48%;
+}
+
+.descrtxtcol div p{
+    text-align: justify;
+}
+
+.kernwtext{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.importcolumns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.importcolumns div{
+padding: 10px;
+}
+
+.footerimporttxt{
+    padding-top: 20px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: underline;
 }

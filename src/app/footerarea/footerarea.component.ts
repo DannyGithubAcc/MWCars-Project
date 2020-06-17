@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-footerarea',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footerarea.component.css']
 })
 export class FooterareaComponent implements OnInit {
+  @Output() changeValue = new EventEmitter();
+  openSlide = false;
 
-  constructor() { }
+  constructor(private viewportScroller: ViewportScroller) { }
 
   ngOnInit() {
   }
 
+  public onClick(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
+  }
+
+  slideOpenContArea() {
+    this.openSlide = true;
+    this.changeValue.emit(this.openSlide);
+  }
 }

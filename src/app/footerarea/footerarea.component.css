@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.footer_menu_items li{
+    cursor: pointer;
+}
+
 .contactsections{
     background-color: rgba(0, 0, 0, .75);
     width: calc(100% / 3.1);
@@ -54,7 +58,7 @@
 }
 
 .footermenu ul li h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     border-bottom: 1px solid whitesmoke;
 }

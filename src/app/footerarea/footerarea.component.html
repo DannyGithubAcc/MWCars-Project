@@ -3,24 +3,25 @@
         <div class="footerarea">
             <div class="contactsections">
                 <div class="footermenu">
-                    <ul>
+                    <ul class="footer_menu_items">
                         <li><h3>MENU</h3></li>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">IMPORT</a></li>
-                        <li><a href="#">OVER ONS</a></li>
-                        <li><a href="#">NIEUWBOUW</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="#">VOORRAAD</a></li>
+                        <li><a [routerLink]="['/home']" (click)="slideOpenContArea()" (click)="onClick('home')">HOME</a></li>
+                        <li><a [routerLink]="['/voorraad']" (click)="slideOpenContArea()" (click)="onClick('home')">VOORRAAD</a></li>
+                        <li (click)="onClick('importarea')">IMPORT AFDELING</li>
+                        <li><a [routerLink]="['/import']" (click)="slideOpenContArea()" (click)="onClick('home')">IMPORT INFORMATIE</a></li>
+                        <li (click)="onClick('leasearea')">FINANCIAL LEASE AFDELING</li>
+                        <li (click)="onClick('nieuwbouwarea')">NIEUWBOUW AFDELING</li>
+                        <li><a [routerLink]="['/nieuwbouw']" (click)="slideOpenContArea()" (click)="onClick('home')">NIEUWBOUW INFORMATIE</a></li>
                     </ul>
                 </div>
             </div>
             <div class="contactsections">
                 <div class="footermenu">
                     <ul>
-                        <li><h3>LINKS</h3></li>
-                        <li><a href="http://mwcars.nl/">ALL CARS</a></li>
-                        <li><a href="#">RELATED</a></li>
-                        <li><a href="#">OTHER SITE</a></li>
+                        <li><h3>GERELATEERDE LINKS</h3></li>
+                        <li><a href="http://mwcars.nl/" target="_blank" rel="noopener noreferrer">OVERZICHT AUTO'S</a></li>
+                        <li><a href="https://www.bovag.nl/" target="_blank" rel="noopener noreferrer">BOVAG</a></li>
+                        <li><a href="https://www.fundainbusiness.nl/bedrijfshal/moordrecht/object-41771274-oostbaan-674-en-675/" target="_blank" rel="noopener noreferrer">FUNDA</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,12 +29,10 @@
                 <div class="footermenu">
                     <ul>
                         <li><h3>CONTACT</h3></li>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">IMPORT</a></li>
-                        <li><a href="#">OVER ONS</a></li>
-                        <li><a href="#">NIEUWBOUW</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="#">VOORRAAD</a></li>
+                        <li><a href="#">EMAIL</a></li>
+                        <li><a href="#">PHONE</a></li>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">ADRES</a></li>
                     </ul>
                 </div>
             </div>

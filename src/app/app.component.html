@@ -1,5 +1,5 @@
-<div class="o-page--wrapper">
-  <div class="body-img__imgwrap">
+<div id="homearea" class="o-page--wrapper">
+  <div class="body-img__imgwrap" id="home">
     <img class="body-img" src="../assets/HomePage_img.png" alt="" />
 
     <div class="svg__positioner">
@@ -20,20 +20,19 @@
       
 
       <div class="h-img__logowrap">
-        <a href="./home"><img src="../assets/Frame 24.svg" alt="" /></a>
+        <a href="./"><img src="../assets/LogoMwCars_flat.svg" alt="" /></a>
       </div>
     </div>
   </div>
   <hr style="margin-top: 32px; width: 60%;" /><br />
 
-  <h2>NIEUWBOUW SECTION</h2>
+  <h2 id="nieuwbouwarea">NIEUWBOUW</h2>
   <section class="section-part-nieuwbouw">
-    <!-- <div class="nieuwbouwtxt">
-      hallo
-
-    </div> -->
     <div class="imgsliderwrap">
-      <div class="infonieuwbouw"><img class="infoimg" src="../assets/infobtn.svg" alt=""></div>
+      <div class="nieuwbouwinfowrapper">
+        <div class="nieuwbouwinformationwindow"></div>
+      </div>
+      <div class="infonieuwbouw"><img (click)="nieuwbouwInfo()" class="infoimg" src="../assets/infobtn.svg" alt=""></div>
 
       <div class="imgsliderSlide ">
         <img src="../assets/nieuwbouwimg/2020-02-13_1 - Photo.jpg" class="myembed " alt="" />
@@ -66,85 +65,37 @@
   </section>
   <hr style="margin-top: 32px; width: 60%;" /><br />
 
-  <h2>IMPORT SECTION</h2>
+  <h2 id="leasearea">FINANCIAL LEASE</h2>
+  <section class="section-part-lease">
+    <div class="leasewrapper">
+      
+      
+    </div>
+
+
+  </section>
+  <hr style="margin-top: 32px; width: 60%;" /><br />
+
+  <h2 id="importarea">IMPORT</h2>
   <section class="section-part-import">
     <div class="importpart">
-
-      <div class="import-cardwrap">
-        <div class="card-imgcontainer">
-          <img src="../assets/nieuwbouwimg/2020-02-13_2 - Photo.jpg" alt="" />
-        </div>
-        <div class="posterinfo">
-          <div>hier profile</div>
-          <div class="datepost">hier date</div>
-        </div>
-        <div class="description-card-area">
-          <h3>Description title here</h3><hr />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore esse dolorum quod, impedit pariatur in sed quidem eaque quibusdam.</p>
-        </div>
-        <div class="card-bottommenu">
-          <div><img src="../assets/iconsImport.svg" alt="" /></div>
-          <div></div>
-          <div><img src="../assets/iconsImport.svg" alt="" style="transform: translateX(-60px);" /></div>
-          <div></div>
-        </div>
-      </div>
-      
-      <div class="import-cardwrap">
-        <div class="card-imgcontainer">
-          <img src="../assets/nieuwbouwimg/2020-02-13_3 - Photo.jpg" alt="" />
-        </div>
-        <div class="posterinfo">
-          <div>hier profile</div>
-          <div class="datepost">hier date</div>
-        </div>
-        <div class="description-card-area">
-          <h3>Description title here</h3><hr />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore esse dolorum quod, impedit pariatur in sed quidem eaque quibusdam.</p>
-        </div>
-        <div class="card-bottommenu">
-          <div><a href="#"><img src="../assets/iconsImport.svg" alt="" /></a></div>
-          <div></div>
-          <div><img src="../assets/iconsImport.svg" alt="" style="transform: translateX(-60px);" /></div>
-          <div></div>
-        </div>
-      </div>
-
-      <div class="import-cardwrap">
-        <div class="card-imgcontainer">
-          <img src="../assets/nieuwbouwimg/2020-02-13_3 - Photo.jpg" alt="" />
-        </div>
-        <div class="posterinfo">
-          <div>hier profile</div>
-          <div class="datepost">hier date</div>
-        </div>
-        <div class="description-card-area">
-          <h3>Description title here</h3><hr />
-          <p> impedit pariatur in sed quidem eaque quibusdam.</p>
-        </div>
-        <div class="card-bottommenu">
-          <div><a href="#"><img src="../assets/iconsImport.svg" alt="" /></a></div>
-          <div></div>
-          <div><img src="../assets/iconsImport.svg" alt="" style="transform: translateX(-60px);" /></div>
-          <div></div>
-        </div>
+      <div>
+       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+       <iframe src="//lightwidget.com/widgets/c3e2b39de8b45ee6a56cafd2f991fc26.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" title="importstream"></iframe>
       </div>
 
     </div>
   </section>
-
-  <!-- Fake height to simulate scroll. -->
-  <!-- <div style="height: 1000px; width: 20px; background-color: red;"></div> -->
   <hr style="margin-top: 32px; width: 60%;" /><br />
 
   
-  <footer id="test">
-    <app-footerarea></app-footerarea>
+  <footer id="footerarea">
+    <app-footerarea (changeValue)="slideContOpen()"></app-footerarea>
    </footer>
 
-   <div *ngIf = "home$ | async as allHome">
+   <!-- <div *ngIf = "home$ | async as allHome">
     <div>
     {{allHome.home.title}}
     </div>
-  </div>
+  </div> -->
 </div>

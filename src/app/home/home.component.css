@@ -13,12 +13,14 @@
     padding: 30px 0;
 }
 
-.hometext{
+.descriptiontext{
     padding: 20px 0 0 0;
-    width: 65%;
+    width: 80%;
     height: auto;
     font-family: 'scada';
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 23px;
     opacity: 0;
 }
 
@@ -26,6 +28,19 @@
     margin-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
 
+.descrtxtcol{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.descrtxtcol div{
+    width: 48%;
+}
+
+.descrtxtcol div p{
+    text-align: justify;
 }
