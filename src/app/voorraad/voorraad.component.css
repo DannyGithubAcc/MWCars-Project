@@ -1,13 +1,14 @@
 .voorraad-iframewrapper iframe{
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 70px;
      height: 90%;
      width: 100%;
 }
 
 .linksanitizer{
-    font-family: "scada";
+    font-family: "darkergrotesque";
+    font-size: 20px;
     text-decoration: none;
     color: whitesmoke;
 }

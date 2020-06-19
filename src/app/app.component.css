@@ -1,312 +1,344 @@
 @supports not (mix-blend-mode: multiply) {
-    .svg__positioner img {
-      opacity: .6;
-    }
+  .svg__positioner img {
+    opacity: 0.7;
   }
-
+}
 
 /* Keep pagecontent centered */
-.o-page--wrapper{
-    width: 85vw;
-    height: 100%;
-    margin: 0 auto;
-    /* background-color: aquamarine; */
+.o-page--wrapper {
+  width: 85vw;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
 }
 
 /* Keep header on top */
-.body__headerwrap{
-    position: relative;
-    top: 90px;
+.body__headerwrap {
+  position: relative;
+  top: 90px;
 }
 
 /* Keep main-image wrapped on top */
-.body-img__imgwrap{
-    position: relative;
-    height: 850px;
-    overflow: hidden;
-    border-radius: 0  0 12px 12px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.body-img__imgwrap {
+  position: relative;
+  height: 850px;
+  overflow: hidden;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* The main img-properties */
-.body-img__imgwrap img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.body-img__imgwrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.body-img_innerpos{
-    margin: 0 auto;
-    position: absolute;
-    width: 85%;
-    height: 90%;
+.body-img_innerpos {
+  margin: 0 auto;
+  position: absolute;
+  width: 85%;
+  height: 90%;
 }
 
 /* slide-able window header main menu */
-.line{
-    position: absolute;
-    overflow: hidden;
-    top: 110px;
-    left: 5%;
-    height: 1px;
-    width: 95%;
-    background-color: rgba(0, 0, 0, .7);
+.line {
+  position: absolute;
+  overflow: hidden;
+  top: 110px;
+  left: 5%;
+  height: 1px;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Keep logo in absolute position in header */
-.h-img__logowrap{
-    position: absolute;
-    width: 190px;
-    height: 190px;
-    top: 15px;
-    left: 0;
-    /* background-color: aqua; */
+.h-img__logowrap {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  top: 15px;
+  left: 0;
+  /* background-color: aqua; */
 }
 
-.h-img__logowrap img{
-    width: 90%;
-    height: 90%;
+.h-img__logowrap img {
+  width: 90%;
+  height: 90%;
 }
 
-.svg__positioner{
-    position: absolute;
-    overflow: hidden;
-    right: 0;
-    top:0;
-    bottom: 0;
-    min-width: 1300px;
-    max-width: 1500px;
+.svg__positioner {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 1300px;
+  max-width: 1500px;
 }
 
-.svg__positioner img{
-    mix-blend-mode: multiply    
+.svg__positioner img {
+  mix-blend-mode: multiply;
 }
 
-.bvaglogo{
-    position: absolute;
-    width: 120px;
-    height: 50px;
-    right: 0;
-    top: 0px;
+.bvaglogo {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  right: 0;
+  top: 0px;
 }
 
-.bvaglogo img{
-    width: 100%;
-    height: 100%;
+.bvaglogo img {
+  width: 100%;
+  height: 100%;
 }
 
-.bvaglogo::before{
-    content: "CERTIFIED";
-    font-family: "scada";
-    color: white;
-    font-size: 14px;
-    font-weight: lighter;
+.bvaglogo::before {
+  content: "CERTIFIED";
+  font-family: "darkergrotesque";
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
-.h-routlet__wrap{
-    padding-top: 30px;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    height: 100%;
-    width: 100%;
+.h-routlet__wrap {
+  padding-top: 30px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
 }
 
 /* Section nieuwbouw --------------------------- */
 
-.section-part-nieuwbouw{
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-    width: 100%;
-    min-height: 700px;
-    background-color: rgb(241, 241, 241);
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+.section-part-nieuwbouw {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+  min-height: 700px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-.infoimg{
-    cursor: pointer;
-    width: 90%;
-    height: 90%;
-    padding: 10px;
+.infoimg {
+  cursor: pointer;
+  width: 90%;
+  height: 90%;
+  padding: 10px;
 }
 
-.infonieuwbouw{
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    z-index: 3;
-    /* background-color: palevioletred; */
+.infonieuwbouw {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  z-index: 3;
+  /* background-color: palevioletred; */
 }
 
-.imgsliderwrap{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 800px;
-    /* display: flex;
+.imgsliderwrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 800px;
+  /* display: flex;
     justify-content: center; */
-    /* background-color: aqua; */
+  /* background-color: aqua; */
 }
 
-.imgsliderSlide{
-    width: 100%;
-    height: 100%;
-    /* display: none; */
+.imgsliderSlide {
+  width: 100%;
+  height: 100%;
+  /* display: none; */
 }
 
-.nieuwbouwtxt{
-    /* background-color: purple; */
-    width: 100%;
-    margin: 20px;
+.nieuwbouwtxt {
+  /* background-color: purple; */
+  width: 100%;
+  margin: 20px;
 }
 
-.imgsliderSlide img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* animation: slideshow 14s ease-in-out 1.3s infinite; */
+.imgsliderSlide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* animation: slideshow 14s ease-in-out 1.3s infinite; */
 }
 
-.nieuwbouwinfowrapper{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nieuwbouwinfowrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nieuwbouwinformationwindow{
-    position: absolute;
-    opacity: 0;
-    background-color: black;
-    width: 70%;
-    height: 70%;
-    z-index: 3;
+.nieuwbouwinformationwindow {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  border-radius: 40px;
+  width: 70%;
+  height: 70%;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.nwbouwinfotext {
+  margin: 40px 80px;
+  opacity: 1;
+  color: whitesmoke;
+  font-family: 'darkergrotesque';
+  font-size: 1.2rem;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.infonwbouwtextwrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.infonwbouwtextwrapper div {
+  width: 45%;
+  text-align: justify;
+}
+
+.fundalinks {
+    display: block;
+}
+
+.fundalinks{
+  color: whitesmoke;
 }
 
 @keyframes slideshow {
-    0%, 10%{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translateX(calc(-100% / 3));
-    }
-    100%{
-        transform: translateX(0%);
-    }
+  0%,
+  10% {
+    transform: translateX(0%);
   }
-
-.prev, .next{
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    opacity: .7;
+  50% {
+    transform: translateX(calc(-100% / 3));
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
-.prev:hover, .next:hover{
-    opacity: 1;
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  opacity: 0.7;
 }
 
-.next img, .prev img{
-    width: 80px;
+.prev:hover,
+.next:hover {
+  opacity: 1;
 }
 
-.next{
-    right: 0px;
+.next img,
+.prev img {
+  width: 80px;
 }
 
-.prev{
-    left: 0px;
+.next {
+  right: 0px;
 }
 
-footer{
-    height: 400px;
-    width: 100%;
-    background-color: aquamarine;
+.prev {
+  left: 0px;
+}
+
+footer {
+  height: 400px;
+  width: 100%;
+  background-color: aquamarine;
 }
 
 /* Import --------------------------- */
 
-.section-part-import{
-    margin-top: 20px;
-    height: 450px;
-    background-color: rgb(241, 241, 241);
-    border-radius: 0 0 12px 12px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+.section-part-import {
+  margin-top: 20px;
+  height: 450px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 0 0 12px 12px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-.importpart{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 10px;
+.importpart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 50px;
 }
 
-.importpart div{
-    width: 100%;
-    height: 100%;
+.importpart div {
+  width: 100%;
+  height: 100%;
 }
 
-.importpart div iframe{
-    border: none;
-    height: 100%;
-    width: 100%;
+.importpart div iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
 }
 
-.homeHeader{
-    opacity: 0;
+.homeHeader {
+  opacity: 0;
 }
 
 /* Section Lease -------------------------- */
 
-.section-part-lease{
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-    width: 100%;
-    min-height: 700px;
-    background-color: rgb(241, 241, 241);
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+.section-part-lease {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+  min-height: 700px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-.leasewrapper{
-    display: flex;
-    background-color: aqua;
-    height: auto;
-    width: 100%;
+.leasewrapper {
+  display: flex;
+  height: auto;
+  width: 100%;
 }
 
-
-@media screen and (max-width: 1023px){
-    .imgsliderSlide img{
-        height: 100%;
-        width: auto;
+@media screen and (max-width: 1023px) {
+  .imgsliderSlide img {
+    height: 100%;
+    width: auto;
     animation: slideshow 14s ease-in-out 1.3s infinite;
-}
+  }
 
-@keyframes slideshow {
-    0%{
-        left: 0;
-
+  @keyframes slideshow {
+    0% {
+      left: 0;
     }
-    50%{
-        transform: translateX(calc(-100% + 850px));
+    50% {
+      transform: translateX(calc(-100% + 850px));
     }
-    100%{
-        left: 0;
+    100% {
+      left: 0;
     }
   }
 }

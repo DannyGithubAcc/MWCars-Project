@@ -47,19 +47,24 @@
 }
 
 .footermenu ul li{
-    font-size: .8rem;
+    font-family: 'darkergrotesque';
+    font-size: 1.1rem;
     opacity: 1;
-    line-height: 1.6rem;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .footermenu ul li a{
     text-decoration: none;
-
 }
 
 .footermenu ul li h3{
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-family: 'darkergrotesque';
+    font-weight: 400;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
     border-bottom: 1px solid whitesmoke;
 }
 

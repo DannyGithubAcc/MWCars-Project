@@ -6,6 +6,9 @@
 }
 
 .navHeader{
+    font-family: 'darkergrotesque';
+    font-size: 2rem;
+    font-weight: 600;
     opacity: 0;
 }
 
@@ -14,14 +17,15 @@
 }
 
 .descriptiontext{
-    padding: 20px 0 0 0;
+    padding: 20px 15px 0 0;
     width: 80%;
     height: auto;
-    font-family: 'scada';
-    font-size: 15px;
-    font-weight: lighter;
-    line-height: 23px;
+    font-family: 'darkergrotesque';
+    font-size: 1.2rem;
+    line-height: 21px;
+    font-weight: 500;
     opacity: 0;
+    z-index: 3;
 }
 
 .kernwtext{
@@ -38,9 +42,27 @@
 }
 
 .descrtxtcol div{
-    width: 48%;
+    width: 100%;
+    margin-right: 20px;
 }
 
 .descrtxtcol div p{
     text-align: justify;
+}
+
+.waardentxt{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.waardentxt h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.imghomebg{
+    position: absolute;
+    left: -100px;
+    top: 290px;
+    opacity: .8;
 }

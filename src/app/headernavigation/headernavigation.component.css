@@ -1,13 +1,14 @@
 .header{
     width: 100%;
-    font-family: 'orbitron';
-    font-size: .8rem;
+    font-family: 'darkergrotesque';
+    font-size: 1rem;
+    font-weight: 700;
     display: flex;
     justify-content: flex-end;
 }
 
 .router-link-active{
-    padding: 3px 10px 3px 10px;
+    padding: 3px 10px 0px 10px;
     background-color: rgba(0, 0, 0, .6);
     pointer-events: none; 
     cursor: default;
@@ -15,8 +16,8 @@
 
 .header a{
     text-decoration: none;
-    color: white;
-    letter-spacing: 0.08rem;
+    color: whitesmoke;
+    letter-spacing: 0.2rem;
 }
 .h-ul--navlist{
     display: flex;
@@ -25,7 +26,7 @@
 }
 
 .h-ul--navlist li{
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .header ul{

@@ -7,7 +7,9 @@
 
 .navHeader {
   opacity: 0;
-  padding-bottom: 10px;
+  font-family: 'darkergrotesque';
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .navHeader h2{
@@ -15,16 +17,16 @@
 }
 
 .descriptiontext {
-  padding: 20px 0 0 0;
-  padding-right: 15px;
+  padding: 20px 15px 0 0;
   width: 80%;
-  height: 550px;
-  font-family: "scada";
-  font-weight: lighter;
-  font-size: 15px;
-  line-height: 20px;
+  height: 580px;
+  font-family: 'darkergrotesque';
+  font-size: 1.2rem;
+  line-height: 21px;
+  font-weight: 500;
   opacity: 0;
   overflow-y: auto;
+  text-align: center;
 }
 
 .descrtxtcol{
@@ -34,7 +36,7 @@
 }
 
 .descrtxtcol div{
-    width: 48%;
+    width: 47%;
 }
 
 .descrtxtcol div p{
@@ -53,7 +55,8 @@
 }
 
 .importcolumns div{
-padding: 10px;
+padding: 10px 10px 0 10px;
+font-size: 1.2rem;
 }
 
 .footerimporttxt{

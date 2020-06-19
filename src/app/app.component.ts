@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
 
   public nieuwbouwInfo(e: string, opacity: number, position: number) {
     const nwbouwInfoWindow = '.nieuwbouwinformationwindow';
-    this.gsapService.nieuwbouwInfoAnim(nwbouwInfoWindow, .7, 0);
+    this.gsapService.nieuwbouwInfoAnim(nwbouwInfoWindow, .8, 0);
   }
 
   public getImages(indexFImages: number) {

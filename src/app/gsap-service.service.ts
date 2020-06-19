@@ -1,8 +1,5 @@
-import { logging } from 'protractor';
 import { Injectable } from '@angular/core';
-import { gsap, Power2, Elastic, Circ} from 'gsap/all';
-import { BehaviorSubject } from 'rxjs';
-import { Stream } from 'stream';
+import { gsap, Power2} from 'gsap/all';
 
 @Injectable({
   providedIn: 'root'
@@ -42,10 +39,10 @@ export class GsapServiceService {
     console.log('ANIM', this.nieuwbouwOverlayActive);
     if (this.nieuwbouwOverlayActive) {
       this.nieuwbouwOverlayActive = false;
-      this.nwbouwTl.to(e, {opacity: myOpacity, x: myPosition, duration: .3});
+      this.nwbouwTl.to(e, {opacity: myOpacity, x: myPosition, duration: .3, display: 'flex'});
     } else {
       this.nieuwbouwOverlayActive = true;
-      this.nwbouwTl.to(e, {opacity: 0, x: 0, duration: .1});
+      this.nwbouwTl.to(e, {opacity: 0, x: 0, duration: .1, display: 'none'});
     }
   }
 
