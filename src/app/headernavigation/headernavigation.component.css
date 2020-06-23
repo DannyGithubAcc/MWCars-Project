@@ -17,7 +17,7 @@
 .header a{
     text-decoration: none;
     color: whitesmoke;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
 }
 .h-ul--navlist{
     display: flex;
