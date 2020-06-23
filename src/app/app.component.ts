@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
   public slideContOpen() {
     const mainCont = '.line';
     this.gsapService.slideOpenFromTtoB(mainCont, .8, 650, 0.3, this.slideTxtIn);
-    console.log(this, 'HIEROOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
     // this.slideTxtIn creates a context of app.component.ts reference from gsapService
   }
 
@@ -43,7 +42,6 @@ export class AppComponent implements OnInit {
     const imgwalkin = '.line .imgrow';
     // context cb method returned from gsapService
     this.cb(slideInHeader, slideInDesc, imgwalkin, .4);
-    console.log('CB CALLED FROM COMPONENT');
   }
 
   public slideImages(num: number) {
