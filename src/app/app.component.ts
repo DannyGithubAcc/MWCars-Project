@@ -1,5 +1,3 @@
-import { tap } from 'rxjs/operators';
-import { ImportService } from './import.service';
 import { GsapServiceService } from './gsap-service.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,12 +10,8 @@ export class AppComponent implements OnInit {
   title = 'mwcarsproject';
   imgIndex = 1;
   cb: (target: string, target2: string, target3: string, duration: number) => void;
-  home$ = this.importService.myJsonData$.pipe(
-    tap(result => console.log(result))
-  );
 
-  constructor(private gsapService: GsapServiceService,
-              private importService: ImportService) {}
+  constructor(private gsapService: GsapServiceService) {}
 
   ngOnInit() {
   }
@@ -35,7 +29,6 @@ export class AppComponent implements OnInit {
   }
 
   public slideTxtIn() {
-    console.log(this);
     const slideInHeader = '.line h2';
     const slideInDesc = '.line .descriptiontext';
     const imgwalkin = '.line .imgrow';
@@ -45,7 +38,6 @@ export class AppComponent implements OnInit {
 
   public slideImages(num: number) {
     const trackindex = this.imgIndex += num;
-    console.log('CHECK HIER: ' + trackindex);
     this.getImages(trackindex);
   }
 
@@ -56,9 +48,7 @@ export class AppComponent implements OnInit {
 
   public getImages(indexFImages: number) {
     const images: any = document.querySelectorAll('.imgsliderSlide');
-    console.log(indexFImages, ' indeximages BEFORE IFS');
     if (indexFImages > images.length || indexFImages === 8) {
-      console.log(images.length);
       this.imgIndex = 1;
       indexFImages = 1;
     }
@@ -66,7 +56,6 @@ export class AppComponent implements OnInit {
       this.imgIndex = 7;
       indexFImages = 7;
     }
-    console.log(indexFImages, ' indeximages AFTER IFS');
 
     for (const image of images) {
       image.style.display = 'none';

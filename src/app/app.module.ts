@@ -15,7 +15,6 @@ import { NieuwbouwComponent } from './nieuwbouw/nieuwbouw.component';
 import { ContactComponent } from './contact/contact.component';
 import { OverOnsComponent } from './over-ons/over-ons.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { RouteroutletContheaderDirective } from './routeroutlet-contheader.directive';
 
 
 @NgModule({
@@ -29,8 +28,7 @@ import { RouteroutletContheaderDirective } from './routeroutlet-contheader.direc
     NieuwbouwComponent,
     ContactComponent,
     OverOnsComponent,
-    NotfoundComponent,
-    RouteroutletContheaderDirective
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
