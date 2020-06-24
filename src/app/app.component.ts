@@ -1,7 +1,7 @@
 import { tap } from 'rxjs/operators';
 import { ImportService } from './import.service';
 import { GsapServiceService } from './gsap-service.service';
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   );
 
   constructor(private gsapService: GsapServiceService,
-              private render: Renderer2,
               private importService: ImportService) {}
 
   ngOnInit() {
