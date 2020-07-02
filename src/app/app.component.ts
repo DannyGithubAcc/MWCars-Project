@@ -36,12 +36,12 @@ export class AppComponent implements OnInit {
     this.cb(slideInHeader, slideInDesc, imgwalkin, .4);
   }
 
-  public slideImages(num: number) {
+  public slideImages(num: any) {
     const trackindex = this.imgIndex += num;
     this.getImages(trackindex);
   }
 
-  public nieuwbouwInfo(e: string, opacity: number, position: number) {
+  public nieuwbouwInfo() {
     const nwbouwInfoWindow = '.nieuwbouwinformationwindow';
     this.gsapService.nieuwbouwInfoAnim(nwbouwInfoWindow, .8, 0);
   }
