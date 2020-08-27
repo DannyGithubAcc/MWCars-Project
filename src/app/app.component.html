@@ -1,10 +1,8 @@
 <div id="homearea" class="o-page--wrapper">
   <div class="body-img__imgwrap" id="home">
-    <img class="body-img" src="../assets/HomePage_img.png" alt="" />
+    <img class="body-img" src="../assets/frontPageCarVisual_next6.png" alt="" />
 
-    <div class="svg__positioner">
-      <img src="../assets/Star 11.svg" alt="" />
-    </div>
+    <!-- <div class="svg__positioner"><img src="../assets/Star 11.svg" alt="" /></div> -->
 
     <div class="body-img_innerpos">
       <div class="line">
@@ -23,6 +21,196 @@
       </div>
     </div>
   </div>
+
+  <!-- Mobile header and nav --------------------------------------------------------------------------------------------------------------- -->
+  <div class="mobile-header-nav">
+    <div class="h-img__logowrap">
+      <img src="../assets/LogoMwCars_flat.svg" alt="" />
+    </div>
+    <div class="hamburgermenu" (click)="openMobileMenu()">
+      <span>MENU</span>
+      <em class="fas fa-bars marginmenu"></em>
+    </div>
+    <div class="mobilebgheaderimg">
+      <img class="body-img" src="../assets/frontPageCarVisual_next6.png" alt="" />
+      <div class="mobilemenu">
+        <div class="menu-icon-row-one">
+        <div (click)="onClickVoorraad('mobiletovoorraad')">
+        <div class="iconmobile">
+          <div><em class="fas fa-car"></em></div>
+          <span>VOORRAAD</span>
+        </div>
+      </div>
+      <div (click)="onClickNieuwbouw('mobiletonieuwbouw')">
+        <div class="iconmobile">
+          <div><em class="fas fa-building"></em></div>
+          <span>NIEUWBOUW</span>
+        </div>
+      </div>  
+      <div (click)="onClickLease('mobiletolease')">
+        <div class="iconmobile">
+          <div><em class="fas fa-comments-dollar"></em></div>
+          <span>LEASE</span>
+        </div>
+        </div>
+      </div>
+      <div class="menu-icon-row-two">
+          <div (click)="onClickLeaseCalc('mobiletocalc')">
+            <div class="iconmobile">
+              <div><em class="fas fa-calculator"></em></div>
+              <span>LEASE</span>
+              <span>CALCULATOR</span>
+            </div>
+          </div>
+        <div (click)="onClickImport('mobiletoimport')">
+        <div class="iconmobile">
+          <div><em class="fas fa-plane-arrival"></em></div>
+          <span>IMPORT</span></div>
+        </div>
+        <div (click)="onClickContact('mobiletoContact')">
+        <div class="iconmobile">
+          <div><em class="fas fa-envelope"></em></div>
+          <span>CONTACT</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Start MOBILE VOORRAAD-section---------------------------- -->
+  <div class="hamburgermenu" id="mobiletovoorraad" (click)="openVoorraadMenu()">
+    <span class="mobiletovoorraad">VOORRAAD</span>
+  </div>
+  <div class="mobile-voorraad-nav">
+    <div class="voorraad-iframewrapper">
+      <iframe src="http://voorraad.autoservicedend.nl/cgi/voertuigen.cgi?site=voorraadlijst&amp;v=ff183fa7" allowfullscreen scrolling="yes" title="voorraadlijst"></iframe>
+    </div>
+  </div>
+
+
+
+  <!-- End MOBILE VOORRAAD-section---------------------------- -->
+    <!-- Start MOBILE Nieuwbouw-section---------------------------- -->
+    <div class="hamburgermenu" id="mobiletonieuwbouw" (click)="openNieuwbouwMenu()">
+      <span>NIEUWBOUW</span>
+    </div>
+    <div class="mobile-nieuwbouw-nav">
+      <div class="mobiledescriptiontext">
+        <div class="mobiledescrtxtcol">
+          <div>
+            <p>
+              Op het hoogwaardige bedrijventerrein “Gouwe Park” gelegen, tussen de
+              gemeentes Gouda, Zuidplas en Waddinxveen, heeft MW Cars een
+              bedrijfsverzamelgebouw ontwikkeld.
+              Begin 2021 zullen wij ons daar gaan vestigen.
+              Ons 800m2 grote nieuwbouw pand ligt centraal, is daarmee goed
+              bereikbaar en geeft ons letterlijk en figuurlijk de ruimte om door te
+              groeien.
+              Naast een grote showroom op de begane grond waar onze
+              occasions staan, is er op de 2de verdieping, welke bereikbaar is met
+              een autolift, de mogelijkheid om uw cabriolet, oldtimer, motor en/of
+              boot (met trailer) verwarmd te stallen.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mobileimgsliderwrap">
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_2 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_1 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_3 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_4 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_5 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_6 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_7 - Photo.jpg" alt="" />
+        </div>
+        <div class="mobileimgsliderSlide">
+          <img src="../assets/nieuwbouwimg/2020-02-13_8 - Photo.jpg" alt="" />
+        </div>
+        <a class="prev" (click)="mobilegetImages(-1)"><img src="../assets/prevbtnimgslider.svg" alt="" /></a>
+        <a class="next" (click)="mobilegetImages(1)"><img src="../assets/nextbtnimgslider.svg" alt="" /></a>
+      </div>
+      <div class="nwbouwinfotext">
+        <h2>Bedrijfsunits te huur</h2>
+        <br />
+        <div class="infonwbouwtextwrapper">
+          <div>
+            Beschikbaar voor verhuur zijn 2 bedrijfsunits van 188 m2 begane
+            grond en 60 m2 op de 1ste verdieping met 3 parkeerplaatsen per
+            unit. Doordat het gebouw op de 1ste verdieping 2 meter uitsteekt
+            is er een hoogte van 7.5 meter voor 144 m2 op de begane grond
+            gerealiseerd. Eventueel zijn de units ook gekoppeld te huur. In
+            dat geval is de oppervlakte ca. 375 m² bedrijfsruimte op de
+            begane grond en ca. 120 m² kantoorruimte op de 1e verdieping.<br /><br />
+            De units worden voorzien van een warmtepomp en vloerverwarming.
+            Door de uitstekende isolatiewaarde van de gebruikte materialen
+            zal naar alle waarschijnlijkheid een energie A+++ label worden
+            verkregen. Op het dak zullen maximaal 450 zonnepanelen worden
+            geplaatst, een deel hiervan kan in de huur worden meegenomen.
+            Bij gebruik van 60 panelen kan een besparing van ca. € 8.000,00
+            &#40;bij saldering van het elektra gebruik&#41; op jaarbasis worden
+            gerealiseerd. Klik hier voor meer informatie op Funda:<br /><br />
+            <a class="fundalinks"
+              href="https://www.fundainbusiness.nl/bedrijfshal/moordrecht/object-41771275-oostbaan-674/"
+              target="_blank" rel="noopener noreferrer">Funda oostbaan-674</a>&nbsp;&nbsp;
+            <a class="fundalinks"
+              href="https://www.fundainbusiness.nl/bedrijfshal/moordrecht/object-41771274-oostbaan-674-en-675/"
+              target="_blank" rel="noopener noreferrer">Funda oostbaan-674-en-675</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End MOBILE nieuwbouw section-------------------------------------- -->
+    <!-- Start MOBILE Lease section --------------------------------------- -->
+    <div class="hamburgermenu" id="mobiletolease" (click)="openfinancialleaseMenu()">
+      <span>FINANCIAL LEASE</span>
+    </div>
+    <div class="mobileleasewrapper">
+      <iframe
+        src="https://iframe.financiallease.nl/lease?stock_id=211&background_color=f5f5f5&primary_color=205485&secondary_color=205485&text_color=000000"
+        title="">
+      </iframe>
+    </div>
+    <div class="hamburgermenu" id="mobiletocalc" (click)="opencalculatorleaseMenu()">
+      <span>LEASE CALCULATOR</span>
+    </div>
+    <div class="mobilecalcwrapper">
+      <iframe
+        src="https://iframe.financiallease.nl/dealer/calculator?calculator_id=272&background_color=f5f5f5&primary_color=205485&secondary_color=205485&text_color=000000"
+        title="">
+      </iframe>
+    </div>
+    <!-- End MOBILE lease section-------------------------------------- -->
+    <div class="hamburgermenu" id="mobiletoimport" (click)="openImportMenu()">
+      <span>IMPORT</span>
+    </div>
+    <div class="mobileimportwrapper">
+      <div>
+        <!-- LightWidget WIDGET -->
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/e6aec0bdfacc5a6ab46f6e2c5f229be9.html" scrolling="no" title="" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      </div>
+    </div>
+    <div class="hamburgermenu" id="mobiletoContact" style="cursor:auto">
+      <span>CONTACT</span>
+    </div>
+    <div class="footermenu">
+      <footer id="mobilefooterarea">
+        <app-footerarea></app-footerarea>
+      </footer>
+    </div>
+  </div>
+  <!-- end mobile block -------------------------------------------------------------------------------------------------------------------- -->
+
   <hr style="margin-top: 32px; width: 60%;" />
   <br />
 
@@ -69,10 +257,10 @@
       </div>
 
       <div class="imgsliderSlide">
-        <img src="../assets/nieuwbouwimg/2020-02-13_1 - Photo.jpg" class="myembed" alt="" />
+        <img src="../assets/nieuwbouwimg/2020-02-13_2 - Photo.jpg" class="myembed" alt="" />
       </div>
       <div class="imgsliderSlide">
-        <img src="../assets/nieuwbouwimg/2020-02-13_2 - Photo.jpg" class="myembed" alt="" />
+        <img src="../assets/nieuwbouwimg/2020-02-13_1 - Photo.jpg" class="myembed" alt="" />
       </div>
       <div class="imgsliderSlide">
         <img src="../assets/nieuwbouwimg/2020-02-13_3 - Photo.jpg" class="myembed" alt="" />
@@ -93,8 +281,8 @@
         <img src="../assets/nieuwbouwimg/2020-02-13_8 - Photo.jpg" class="myembed" alt="" />
       </div>
 
-      <a class="prev" (click)="slideImages(-1)"><img src="../assets/prevbtnimgslider.svg" alt="" /></a>
-      <a class="next" (click)="slideImages(1)"><img src="../assets/nextbtnimgslider.svg" alt="" /></a>
+      <a class="prev" (click)="getImages(-1)"><img src="../assets/prevbtnimgslider.svg" alt="" /></a>
+      <a class="next" (click)="getImages(1)"><img src="../assets/nextbtnimgslider.svg" alt="" /></a>
     </div>
   </section>
   <hr style="margin-top: 32px; width: 60%;" />

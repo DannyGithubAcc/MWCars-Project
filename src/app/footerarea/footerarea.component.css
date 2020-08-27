@@ -71,3 +71,43 @@
 a:link, a:visited {
     color: whitesmoke;
 }
+
+@media screen and (max-width: 1023px) {
+
+    .footerarea > div:first-of-type{
+        display: none;
+    }
+
+    .footerarea{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .contactsections{
+        width: 100%;
+        height: 60%;
+        flex-wrap: wrap;
+        border: none;
+        border-radius: 0px;
+        background-color: rgb(56, 56, 56);
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .footermenu{
+        padding-top: 10px;
+        width: 100vw;
+    }
+
+    .footermenu ul li h3{
+        border: none;
+    }
+
+    .bgimage{
+        background-image: none;
+    }
+
+    .footermenu ul li{
+        line-height: 35px;
+    }
+
+}

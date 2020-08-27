@@ -38,4 +38,50 @@ export class GsapServiceService {
     .fromTo(e2, {x: -100, opacity: 0 }, {x: 0, duration: tym, opacity: 1, delay: .2, ease: 'back' })
     .fromTo(e3, {x: -100, opacity: 0}, {x: 0, opacity: 1, stagger: .3, delay: - .5});
   }
+
+  public mobNieuwbouwMenuSlide(e: string, tym: number, open: boolean) {
+    const tl = gsap.timeline({});
+    if (open === true) {
+      tl.to(e, {height: 0, duration: tym, ease: Power2.easIn });
+    } else {
+      tl.to(e, {height: 1000, duration: tym, ease: Power2.easIn });
+    }
+  }
+
+  public mobLeaseMenuSlide(e: string, tym: number, open: boolean) {
+    const tl = gsap.timeline({});
+    if (open === true) {
+      tl.to(e, {height: 0, duration: tym, ease: Power2.easIn });
+    } else {
+      tl.to(e, {height: 600, duration: tym, ease: Power2.easIn });
+    }
+  }
+
+  public mobCalcMenuSlide(e: string, tym: number, open: boolean) {
+    const tl = gsap.timeline({});
+    if (open === true) {
+      tl.to(e, {height: 0, duration: tym, ease: Power2.easIn });
+    } else {
+      tl.to(e, {height: 600, duration: tym, ease: Power2.easIn });
+    }
+  }
+
+  public mobImportMenuSlide(e: string, tym: number, open: boolean) {
+    const tl = gsap.timeline({});
+    if (open === true) {
+      tl.to(e, {height: 0, duration: tym, ease: Power2.easIn });
+    } else {
+      tl.to(e, {height: 500, duration: tym, ease: Power2.easIn });
+    }
+  }
+
+  public mobVoorraadMenuSlide(e: string, tym: number, open: boolean) {
+    const tl = gsap.timeline({});
+    if (open === true) {
+      tl.to(e, {height: 0, duration: tym, ease: Power2.easIn });
+    } else {
+      tl.to(e, {height: 500, duration: tym, ease: Power2.easIn });
+    }
+  }
+
 }
