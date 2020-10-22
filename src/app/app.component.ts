@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
               private viewscroller: ViewportScroller) {}
 
   ngOnInit() {
+    this.slideContOpen();
   }
 
   public fOpeningAnim() {

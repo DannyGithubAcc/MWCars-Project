@@ -389,13 +389,13 @@ footer {
     height: 150px;
   }
   .h-img__logowrap{
-    position: relative;
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    height: 150px;
-    top:0;
-    justify-content: center;
+    height: 30%;
+    width: 30%;
+    margin: 20px;
+    left: auto;
+    top: auto;
+    bottom:0;
+    right: 0;
   }
 
   .h-img__logowrap img {
@@ -421,7 +421,7 @@ footer {
 
   .mobilebgheaderimg{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
   }
 
   .mobilemenu{
@@ -579,20 +579,22 @@ footer {
   .mobileimportwrapper {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     margin-bottom: 20px;
     height: 0px;
   }
 
   .mobileimportwrapper div {
-    height: 100%;
+    height: auto;
     overflow: hidden;
   }
 
-  .mobileimportwrapper div iframe {
-    border: none;
-    width: 300%;
-    height: 100%;
+  .mobileimportiframeholder{
+    width: 100%;
+    height: 500px;
+  }
+
+  .mobileimportiframeholder iframe{
+    height: 500px;
   }
 
   .footermenu {
@@ -621,5 +623,66 @@ footer {
 
   .marginmenu {
     margin: 10px;
+  }
+
+  .mwcarshomeinfo{
+    color: aliceblue;
+    font-size: 1.1em;
+    line-height: 1em;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .mwcarshomeinfo hr {
+    display: block;
+  }
+
+  .mobilewaardentxt{
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mobilewaardentxt h3{
+    margin-bottom: 5px;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .mobileimporttext{
+    margin: 20px;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    color: aliceblue;
+  }
+
+  .mobileimportusp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    /* background-color: aqua; */
+  }
+
+  .mobileimportusppoint{
+    max-width: 300px;
+    margin: 10px;
+  }
+
+  .mobileimportusppoint span{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .mobileimportusppoint p{
+    text-align: center;
+  }
+
+  .mobileheaderimgcar{
+    width: 100%;
+    position: relative;
   }
 }

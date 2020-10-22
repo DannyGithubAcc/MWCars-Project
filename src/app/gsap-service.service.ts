@@ -71,7 +71,7 @@ export class GsapServiceService {
     if (open === true) {
       tl.to(e, {height: 0, duration: tym, ease: Power2.easIn });
     } else {
-      tl.to(e, {height: 500, duration: tym, ease: Power2.easIn });
+      tl.to(e, {height: 'auto', duration: tym, ease: Power2.easIn });
     }
   }
 
